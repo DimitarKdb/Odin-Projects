@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+    background-color: #1F2937;
+    color: white;
+    height: 300px;
+    flex-shrink: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 8px 0;
+    height: 20%;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.links a:not(:last-child) {
+    padding-right: 8px;
+}
+
+.links a:hover {
+    color: lightblue;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+    padding-bottom: 50px;
+}
+
+.header-information {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.header-img {
+    width: 40%;
+    background-image: url("https://www.oakhousefoods.co.uk/media/catalog/product/cache/336111bc363ebdc007831e2145326566/1/4/14-day-meal-pack-_meals_-p256.jpg");
+    background-size:contain;
+}
+
+.sign-up {
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+    width: 80px;
+    align-self: self-start;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.sign-up:hover {
+    background-color:lightblue;
+    color: white;
+}
+
+.header-content p {
+    font-size: 12px;
+}
+
+/* ^^^^^^^ header ^^^^^^^^ */
+
+
