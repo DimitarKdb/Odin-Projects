@@ -10,7 +10,7 @@ header {
     padding: 0 150px;
     background-color: #1F2937;
     color: white;
-    height: 300px;
+    height: 280px;
     flex-shrink: 1;
 }
 
@@ -46,6 +46,7 @@ nav {
     justify-content: space-between;
     height: 80%;
     padding-bottom: 50px;
+    flex-shrink: 1;
 }
 
 .header-information {
@@ -56,6 +57,10 @@ nav {
     gap: 10px;
 }
 
+.header-content hr {
+    width: 270px;
+}
+
 .header-img {
     width: auto;
     height: 150px;
@@ -63,19 +68,33 @@ nav {
 
 .sign-up {
     font-size: 12px;
-    padding: 4px;
+    padding: 6px;
     border-radius: 5px;
-    border: none;
-    width: 80px;
+    border: 2px solid black;
+    width: 140px;
     align-self: self-start;
     cursor: pointer;
     transition: .5s;
+    text-wrap: nowrap;
+    animation: myborder 4s infinite;
+    background-color: beige;
+    font-weight: 500;
 }
 
 .sign-up:hover {
     background-color:lightblue;
     color: white;
+    width: 150px;
 }
+
+@keyframes myborder {
+    15% {border-color: red;}
+    30% {border-color: orange;}
+    45% {border-color: yellow;}
+    60% {border-color: chartreuse;}
+    75% {border-color: blue; }
+    90% {border-color: purple;}
+  }
 
 .header-content p {
     font-size: 12px;
