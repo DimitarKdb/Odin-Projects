@@ -10,6 +10,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color:burlywood;
+    min-height: 100vh
 }
 
 .header {
