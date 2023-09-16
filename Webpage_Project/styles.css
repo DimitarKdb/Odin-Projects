@@ -57,9 +57,8 @@ nav {
 }
 
 .header-img {
-    width: 40%;
-    background-image: url("https://www.oakhousefoods.co.uk/media/catalog/product/cache/336111bc363ebdc007831e2145326566/1/4/14-day-meal-pack-_meals_-p256.jpg");
-    background-size:contain;
+    width: auto;
+    height: 150px;
 }
 
 .sign-up {
