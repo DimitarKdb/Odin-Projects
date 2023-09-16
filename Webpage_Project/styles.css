@@ -1,158 +1,178 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 body {
-    min-height: 100vh
+  min-height: 100vh;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    padding: 0 150px;
-    background-color: #1F2937;
-    color: white;
-    height: 500px;
-    flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 150px;
+  background-color: #1f2937;
+  color: white;
+  height: 500px;
+  flex-shrink: 1;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    padding: 8px 0;
-    height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 8px 0;
+  height: 20%;
 }
 
 .header-logo {
-    font-size: 48px;
-    font-weight: bolder;
+  font-size: 64px;
+  font-weight: bolder;
 }
 
 .links a {
-    text-decoration: none;
-    color: white;
-    font-size: 22px;
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
 }
 
 .links a:not(:last-child) {
-    padding-right: 12px;
+  padding-right: 30px;
 }
 
 .links a:hover {
-    color: lightblue;
+  color: lightblue;
 }
 
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    height: 80%;
-    padding-bottom: 50px;
-    flex-shrink: 1;
+  display: flex;
+  justify-content: space-between;
+  height: 80%;
+  padding-bottom: 50px;
+  flex-shrink: 1;
 }
 
 .header-information {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.justice {
+    font-size: 40px;
 }
 
 .header-content hr {
-    width: 270px;
-    margin-top: -30px;
+  width: 80%;
+  margin-top: -30px;
 }
 
 .header-img {
-    width: 300px;
-    height: 280px;
+  width: 300px;
+  height: 280px;
 }
 
 .sign-up {
-    font-size: 24px;
-    padding: 6px;
-    border-radius: 15px;
-    border: 4px solid black;
-    width: 280px;
-    align-self: self-start;
-    cursor: pointer;
-    transition: .5s;
-    text-wrap: nowrap;
-    animation: myborder 4s infinite;
-    background-color: white;
-    font-weight: 600;
+  font-size: 24px;
+  padding: 6px;
+  border-radius: 15px;
+  border: 4px solid white;
+  width: 280px;
+  align-self: self-start;
+  cursor: pointer;
+  transition: 0.5s;
+  text-wrap: nowrap;
+  animation: myborder 4s infinite;
+  background-color: white;
+  font-weight: 600;
 }
 
 .sign-up:hover {
-    background-color:lightblue;
-    color: white;
-    width: 300px;
+  background-color: lightblue;
+  color: white;
+  width: 300px;
 }
 
 @keyframes myborder {
-    /* 15% {border-color: red;}
+  /* 15% {border-color: red;}
     30% {border-color: orange;}
     45% {border-color: yellow;}
     60% {border-color: chartreuse;}
     75% {border-color: blue; }
     90% {border-color: purple;} */
-    50% { border-color: red;}
+  50% {
+    border-color: red;
   }
+}
 
 .header-content p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* ^^^^^^^ header ^^^^^^^^ */
 
 .first-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 500px;
 }
 
 .first-section h2 {
-    padding: 25px 0;
-    font-size: 30px;
+  padding: 25px 0;
+  font-size: 30px;
+  text-decoration: underline;
 }
 
 .portraits {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;    
-    gap: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .portraits div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 300px;
-    width: 300px;
-    background-color: lightgrey;
-    padding: 15px;
-    border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 340px;
+  width: 300px;
+  background-color: lightgrey;
+  padding: 15px;
+  border-radius: 35px;
 }
 
 .portraits div img {
-    width: 150px;
-    border: 2px solid black;
-    border-radius: 8px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 8px;
 }
 
 .portraits div h3 {
-    margin: -10px 0;
+  margin: -10px 0;
 }
 
 .portraits div hr {
-    width: 150px;
+  width: 150px;
 }
 
+.portraits div p {
+  height: 70px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.s-class {
+  color: red;
+}
+
+.c-class {
+    color: green;
+}
